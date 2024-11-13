@@ -77,7 +77,7 @@
                     <p>"{{ service.testimonial.quote }}"</p>
                   </blockquote>
                   <figcaption class="mt-6 flex gap-x-4 text-sm/6">
-                    <img src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" class="h-6 w-6 flex-none rounded-full" />
+                    <img src="/JL.jpeg" alt="" class="h-6 w-6 flex-none rounded-full" />
                     <div><span class="font-semibold text-gray-900">{{ service.testimonial.author }}</span> – {{ service.testimonial.location }}</div>
                   </figcaption>
                 </figure>
@@ -105,13 +105,14 @@
         "/aduproces1.jpg",
         "/foundation.jpg",
         "/aduprogress3.jpg",
+        "/roof-adu.jpg",
         "/structure.jpg",
       ],
       imageAlt: "Custom ADU construction project",
       testimonial: {
         quote: "Art's team guided us through the entire ADU process. They handled all the permits, designed a beautiful space, and completed construction ahead of schedule. The rental income from our ADU has been a game-changer.",
-        author: "Sarah Thompson",
-        location: "Carmel Valley, San Diego"
+        author: "Jose Samperio",
+        location: "Eastlake, San Diego"
       }
     }
   ]

@@ -109,6 +109,7 @@ const services = [
     images: [
       "/house.jpg",
       "/house2.jpg",
+      "/house3.jpg",
       "kitchen.jpeg"
     ],
     imageAlt: "Custom home construction project",

@@ -9,7 +9,7 @@
             San Diego's trusted name in construction since 2008. We transform visions into reality with quality craftsmanship and attention to detail.
           </p>
           <div class="flex gap-x-6">
-            <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-600 hover:text-gray-800">
+            <a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
             </a>
@@ -49,7 +49,7 @@
               <h3 class="text-sm/6 font-semibold text-gray-900">Legal</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                  <a :href="item.href" target="_blank" class="text-sm/6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
                 </li>
               </ul>
             </div>
@@ -82,6 +82,10 @@ const services = [
     href: "#services",
   },
   {
+    name: "ADU's",
+    href: "#adus",
+  },
+  {
     name: "Outdoor Living Spaces",
     href: "#services",
   },
@@ -95,16 +99,15 @@ const navigation = {
   company: [
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Testimonials', href: '#testimonials' },
   ],
   legal: [
-    { name: 'Privacy', href: '#privacy' },
-    { name: 'Terms', href: '#terms' },
+    { name: 'Privacy', href: '/privacy-policy' },
+    { name: 'Terms', href: '/terms-of-service' },
   ],
   social: [
     {
       name: 'Facebook',
-      href: '#',
+      href: 'https://www.facebook.com/p/Arts-General-Construction-100032105995800/?_rdr',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
