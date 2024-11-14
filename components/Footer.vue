@@ -4,7 +4,7 @@
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <!-- Logo and Company Info Section -->
         <div class="space-y-8">
-          <img class="h-12" src="/logo.png" alt="Art's General Construction" />
+          <img class="h-16" src="/Artslogo.png" alt="Art's General Construction" />
           
           <div class="flex gap-x-6">
             <a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class="text-gray-600 hover:text-gray-800">

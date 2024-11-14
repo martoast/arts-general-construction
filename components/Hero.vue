@@ -17,7 +17,7 @@
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Art's General Construction</span>
             <!-- Add your logo here -->
-            <img class="h-12 w-auto" src="/logo.png" alt="Company logo" />
+            <img class="h-14 w-auto" src="/Artslogo.png" alt="Company logo" />
           </a>
         </div>
       </nav>
