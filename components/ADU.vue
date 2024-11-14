@@ -102,11 +102,10 @@
       description: "From permits to completion, we handle every aspect of your ADU project. Our comprehensive service includes design consultation, permit acquisition, construction, and final inspections. We specialize in maximizing your property's potential while navigating San Diego's ADU regulations. Our experienced team ensures a smooth process, delivering high-quality additional living spaces that add value to your property.",
       images: [
         "/adus2.jpg",
+        '/jl/20240807_092928.jpg',
         "/aduproces1.jpg",
         "/foundation.jpg",
-        "/aduprogress3.jpg",
-        "/roof-adu.jpg",
-        "/structure.jpg",
+        
       ],
       imageAlt: "Custom ADU construction project",
       testimonial: {

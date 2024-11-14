@@ -28,8 +28,7 @@
       <div class="mx-auto max-w-3xl py-32 sm:py-48">
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Transforming San Diego Homes and ADU's for
-            <span class="block text-orange-400">over 15 years</span>
+            Transforming San Diego Homes and ADU's
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-100 max-w-xl mx-auto">
             From custom homes to complete renovations, we bring exceptional craftsmanship and dedicated service to every project.
