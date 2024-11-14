@@ -119,6 +119,7 @@
         '/jl/20240827_114413.jpg',
         
         '/jl/20241113_104612.jpg',
+        '/jl/20241001_180044.jpg'
         
       ],
       imageAlt: "Custom ADU construction project",
