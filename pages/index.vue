@@ -5,8 +5,8 @@
       
       <Services id="services"/>
       <ADU id="adus"/>
-      <!-- <Team/> -->
-      <Testimonials/>
+      <Team/>
+      <!-- <Testimonials/> -->
       <Contact id="contact"/>
       <Footer/>
     </div>
