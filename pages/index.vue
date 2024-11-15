@@ -2,8 +2,9 @@
     <div>
       <Hero/>
       <About id="about"/>
-      <ADU id="adus"/>
+      
       <Services id="services"/>
+      <ADU id="adus"/>
       <!-- <Team/> -->
       <Testimonials/>
       <Contact id="contact"/>

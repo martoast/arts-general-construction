@@ -107,6 +107,7 @@ const services = [
     title: "Building Your Dream Home",
     description: "Art's General Construction has been transforming San Diego homes and spaces for over 15 years. As a full-service construction and remodeling company, we handle every aspect of your project from initial concept to final inspection. Our commitment to quality craftsmanship and attention to detail has made us one of San Diego's most trusted names in construction.",
     images: [
+      "/wow.jpg",
       "/house.jpg",
       "/house2.jpg",
       "/house3.jpg",
