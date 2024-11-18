@@ -27,7 +27,7 @@
       <div class="mx-auto max-w-3xl py-32 sm:py-48">
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl drop-shadow-2xl">
-            Building San Diego's Homes and ADU's
+            Building San Diego's Homes and ADUs
           </h1>
           <p class="mt-8 text-lg leading-8 text-gray-100 max-w-xl mx-auto drop-shadow-lg font-medium">
             From custom homes to complete renovations, we bring exceptional craftsmanship and dedicated service to every project.
