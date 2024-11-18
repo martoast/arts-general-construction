@@ -67,7 +67,7 @@
     </div>
 
     <!-- Enhanced scroll indicator -->
-    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+    <div class="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2">
       <div class="flex flex-col items-center space-y-2">
         <span class="text-sm font-medium text-white/80 tracking-wider">Scroll to explore</span>
         <div class="w-8 h-14 border-2 border-white/20 rounded-full flex items-start justify-center p-2">
