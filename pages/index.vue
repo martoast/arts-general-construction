@@ -15,6 +15,12 @@
 
 <script setup>
 
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+  }
+})
+
 useSeoMeta({
         robots: 'index, follow',
         title: "Art's General Construction",

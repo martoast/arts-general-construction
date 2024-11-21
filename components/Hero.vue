@@ -1,30 +1,43 @@
 <template>
-  <div class="relative isolate h-screen">
+  <div class="relative isolate h-screen" role="banner">
     <!-- Background image with enhanced overlay -->
-    <div class="absolute inset-0">
+    <div class="absolute inset-0" aria-hidden="true">
       <img
         src="/contruction.jpg"
-        alt="Modern construction project"
+        alt="View of a modern construction project showcasing our work"
         class="h-full w-full object-cover"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-900/50 to-gray-900/70" aria-hidden="true" />
+      <div 
+        class="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-900/50 to-gray-900/70" 
+        aria-hidden="true" 
+      />
     </div>
 
-    <!-- Navigation bar with improved styling -->
-    <div class="absolute inset-x-0 top-0 z-10">
-      <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <!-- Navigation bar -->
+    <header class="absolute inset-x-0 top-0 z-10">
+      <nav 
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" 
+        aria-label="Main navigation"
+      >
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5 transition-transform duration-300 hover:scale-105">
-            <span class="sr-only">Art's General Construction</span>
-            <img class="h-14 w-auto drop-shadow-2xl" src="/Artslogo.png" alt="Company logo" />
+          <a 
+            href="/" 
+            class="-m-1.5 p-1.5 transition-transform duration-300 hover:scale-105"
+            aria-label="Art's General Construction - Home"
+          >
+            <img 
+              class="h-14 w-auto drop-shadow-2xl" 
+              src="/Artslogo.png" 
+              alt="Art's General Construction logo" 
+            />
           </a>
         </div>
       </nav>
-    </div>
+    </header>
 
-    <!-- Enhanced hero content -->
+    <!-- Main hero content -->
     <div class="relative isolate px-6 pt-14 lg:px-8">
-      <div class="mx-auto max-w-3xl py-32 sm:py-48">
+      <main class="mx-auto max-w-3xl py-32 sm:py-48">
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl drop-shadow-2xl">
             Building San Diego's Homes and ADUs
@@ -35,7 +48,8 @@
           <div class="mt-12 flex flex-col items-center justify-center space-y-4 sm:space-y-0 sm:flex-row sm:space-x-6">
             <a
               href="#contact"
-              class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-red-600 px-8 py-3.5 text-lg font-semibold text-white shadow-lg hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-0.5"
+              class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-red-600 px-8 py-3.5 text-lg font-semibold text-white shadow-lg hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-0.5 min-h-[44px] min-w-[44px]"
+              aria-label="Request a free consultation"
             >
               Get a free consultation
               <svg 
@@ -43,13 +57,15 @@
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
             <a 
               href="#services" 
-              class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-md px-8 py-3.5 text-lg font-semibold text-white transition-all duration-300 ease-out hover:text-white/90 backdrop-blur-sm bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20"
+              class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-md px-8 py-3.5 text-lg font-semibold text-white transition-all duration-300 ease-out hover:text-white/90 backdrop-blur-sm bg-white/10 hover:bg-white/20 border border-white/10 hover:border-white/20 min-h-[44px] min-w-[44px]"
+              aria-label="View our services"
             >
               Our Services
               <svg 
@@ -57,17 +73,21 @@
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </a>
           </div>
         </div>
-      </div>
+      </main>
     </div>
 
-    <!-- Enhanced scroll indicator -->
-    <div class="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2">
+    <!-- Scroll indicator -->
+    <div 
+      class="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2"
+      aria-hidden="true"
+    >
       <div class="flex flex-col items-center space-y-2">
         <span class="text-sm font-medium text-white/80 tracking-wider">Scroll to explore</span>
         <div class="w-8 h-14 border-2 border-white/20 rounded-full flex items-start justify-center p-2">
