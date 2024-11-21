@@ -120,10 +120,10 @@ function openModal(index) {
 
 // Services data
 const services = [
-  {
-    name: "Custom Home Building",
-    description:
-      "We specialize in creating bespoke homes that perfectly match your vision and lifestyle. Our experienced team ensures exceptional quality and craftsmanship throughout every phase of construction.",
+{
+    name: "Design & Build",
+    description: 
+      "From architectural design to final construction, we handle your entire project under one roof. Our in-house architectural expertise and construction management ensures a seamless experience, from permits and planning to the final touches.",
     icon: HomeIcon,
   },
   {
