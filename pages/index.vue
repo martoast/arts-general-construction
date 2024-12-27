@@ -2,6 +2,12 @@
     <div>
       <Hero/>
       <About id="about"/>
+
+      <BeforeAfterSlider
+        beforeImage="/house3.jpg"
+        afterImage="/contrusction2.jpg"
+        class="h-96 my-8"
+      />
       
       <Services id="services"/>
       <ADU id="adus"/>

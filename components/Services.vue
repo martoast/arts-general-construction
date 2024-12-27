@@ -101,11 +101,11 @@ const selectedImageIndex = ref(0);
 
 // Gallery images with their paths
 const galleryImages = [
-  '/contrusction2.jpg',
-  '/foundation3.jpg',
-  '/nice.jpg',
+  '/contruction.jpg',
+  '/sidehouse-sunset.jpg',
   '/great.jpg',
-  '/fullhouse.jpg'
+  '/nice.jpg',
+  '/patio.jpg'
 ];
 
 // Alt texts for accessibility

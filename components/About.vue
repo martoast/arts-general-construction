@@ -18,7 +18,7 @@
               <p class="mt-6 text-lg/8 text-gray-600">{{ service.description }}</p>
               
               <!-- Testimonial -->
-              <figure class="mt-4 border-l border-gray-200 pl-8 text-gray-600">
+              <!-- <figure class="mt-4 border-l border-gray-200 pl-8 text-gray-600">
                 <blockquote>
                   <p>"{{ service.testimonial.quote }}"</p>
                 </blockquote>
@@ -26,7 +26,7 @@
                   <img :src="service.testimonial.avatar || 'placeholder.png'" :alt="service.testimonial.author" class="h-6 w-6 flex-none rounded-full" />
                   <div><span class="font-semibold text-gray-900">{{ service.testimonial.author }}</span> – {{ service.testimonial.location }}</div>
                 </figcaption>
-              </figure>
+              </figure> -->
             </div>
           </div>
           
@@ -53,7 +53,7 @@
                 v-for="(_, index) in service.images"
                 :key="index"
                 @click="setImageIndex(service.title, index)"
-                class="w-12 h-12 sm:w-8 sm:h-8 rounded-full transition-colors duration-200 flex items-center justify-center"
+                class="w-8 h-8 md:w-10 md:h-10 rounded-full transition-colors duration-200 flex items-center justify-center"
                 :class="currentImageIndexes[service.title] === index ? 'bg-red-600' : 'bg-gray-300'"
                 :aria-label="`Show image ${index + 1} of ${service.images.length}`"
                 :aria-selected="currentImageIndexes[service.title] === index"
@@ -116,11 +116,12 @@ const services = [
     title: "Building Your Dream Home",
     description: "Art's General Construction has been transforming San Diego homes and spaces for over 15 years. As a full-service construction and remodeling company, we handle every aspect of your project from initial concept to final inspection. Our commitment to quality craftsmanship and attention to detail has made us one of San Diego's most trusted names in construction.",
     images: [
+      "/big-house.jpg",
       "/wow.jpg",
-      "/house.jpg",
-      "/house2.jpg",
-      "/house3.jpg",
-      "kitchen.jpeg"
+      "/finished.jpg",
+      "/livingroom-wow 1.jpg",
+      "/kitchen.jpeg",
+      "/backsplash 1.jpg"
     ],
     imageAlt: "Custom home construction project",
     testimonial: {
@@ -136,7 +137,6 @@ onMounted(() => {
   services.forEach(service => {
     currentImageIndexes.value[service.title] = 0
   })
-  startAutoScroll()
 })
 
 onUnmounted(() => {

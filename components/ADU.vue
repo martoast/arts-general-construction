@@ -44,7 +44,7 @@
                 v-for="(_, index) in service.images"
                 :key="index"
                 @click="setImageIndex(service.title, index)"
-                class="w-12 h-12 sm:w-8 sm:h-8 rounded-full transition-colors duration-200 flex items-center justify-center"
+                class="w-8 h-8 md:w-10 md:h-10 sm:w-8 sm:h-8 rounded-full transition-colors duration-200 flex items-center justify-center"
                 :class="
                   currentImageIndexes[service.title] === index
                     ? 'bg-red-600'
@@ -194,7 +194,6 @@ onMounted(() => {
   services.forEach((service) => {
     currentImageIndexes.value[service.title] = 0;
   });
-  startAutoScroll();
 });
 
 onUnmounted(() => {
