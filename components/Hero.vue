@@ -1,12 +1,38 @@
+<script setup>
+const images = ref([
+  '/house3.jpg',
+  '/good.jpg',
+  '/great.jpg',
+  
+])
+
+const currentImageIndex = ref(0)
+
+const nextImage = () => {
+  currentImageIndex.value = (currentImageIndex.value + 1) % images.value.length
+}
+
+onMounted(() => {
+  const interval = setInterval(nextImage, 5000)
+
+  onUnmounted(() => clearInterval(interval))
+})
+</script>
+
 <template>
   <div class="relative isolate h-screen" role="banner">
     <!-- Background image with enhanced overlay -->
     <div class="absolute inset-0" aria-hidden="true">
-      <img
-        src="/contruction.jpg"
-        alt="View of a modern construction project showcasing our work"
-        class="h-full w-full object-cover"
-      />
+      <TransitionGroup name="fade">
+        <img
+          v-for="(image, index) in images"
+          :key="image"
+          :src="image"
+          v-show="currentImageIndex === index"
+          alt="View of our construction projects"
+          class="absolute h-full w-full object-cover transition-opacity duration-1000"
+        />
+      </TransitionGroup>
       <div 
         class="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-900/50 to-gray-900/70" 
         aria-hidden="true" 
@@ -47,6 +73,7 @@
           </p>
           <div class="mt-12 flex flex-col items-center justify-center space-y-4 sm:space-y-0 sm:flex-row sm:space-x-6">
             <a
+            
               href="#contact"
               class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-red-600 px-8 py-3.5 text-lg font-semibold text-white shadow-lg hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-0.5 min-h-[44px] min-w-[44px]"
               aria-label="Request a free consultation"
@@ -99,6 +126,16 @@
 </template>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 @keyframes scroll {
   0% {
     transform: translateY(0);
